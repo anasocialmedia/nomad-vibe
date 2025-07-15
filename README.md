@@ -1,15 +1,20 @@
 Hola, soy Ana y este es mi sitio web creado para la Entrega 2 del curso de Desarrollo Web en CoderHouse.
 
+Visita el sitio online aquí (https://anasocialmedia.github.io/nomad-vibe/)
+
 Nomad Vibe es mi espacio personal para compartir:
 
 - Experiencias y relatos de viaje.
-- Destinos recomendados que me han inspirado.
-- Tips prácticos para viajeras como yo.
-- Un formulario para que puedan escribirme.
+- Destinos recomendados.
+- Tips prácticos para viajeras.
+- Formulario de contacto.
 
-Este proyecto fue mi oportunidad para aplicar:
+Tecnologías utilizadas
 
-- Estructura avanzada usando HTML semántico.
-- Estilos avanzados con CSS, usando Grid y Flexbox.
-- Bootstrap para agregar componentes responsivos.
-- Organización ordenada de carpetas y archivos.
+- HTML5
+- CSS (con Grid y Flexbox)
+- Bootstrap 5
+- Git & GitHub
+
+Ana Arias  
+GitHub (https://github.com/anasocialmedia)
