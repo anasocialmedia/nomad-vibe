@@ -1,20 +1,52 @@
-Hola, soy Ana y este es mi sitio web creado para la Entrega 2 del curso de Desarrollo Web en CoderHouse.
+# 🌍 Nomad Vibe
 
-Visita el sitio online aquí (https://anasocialmedia.github.io/nomad-vibe/)
+¡Hola! Soy Ana y este es mi sitio web creado como parte de la **Entrega 3** del curso de **Desarrollo Web** en **CoderHouse**.
 
-Nomad Vibe es mi espacio personal para compartir:
+🔗 **[Ver sitio en línea](https://anasocialmedia.github.io/nomad-vibe/)**
 
-- Experiencias y relatos de viaje.
-- Destinos recomendados.
-- Tips prácticos para viajeras.
-- Formulario de contacto.
+---
 
-Tecnologías utilizadas
+## ✨ ¿Qué encontrarás en Nomad Vibe?
 
-- HTML5
-- CSS (con Grid y Flexbox)
-- Bootstrap 5
-- Git & GitHub
+Un espacio personal para compartir mi estilo de vida nómada y experiencias de viaje:
 
-Ana Arias  
-GitHub (https://github.com/anasocialmedia)
+- 📖 **Relatos de viaje** (como mi experiencia en Cusco)
+- 🌎 **Destinos recomendados**
+- 🧳 **Tips prácticos para viajeras**
+- 📬 **Formulario de contacto**
+- 🗺️ **Mapa embebido** con mis lugares favoritos
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- `HTML5`
+- `CSS3` con **Grid y Flexbox**
+- `Bootstrap 5` (navbar, grid responsive, botones, etc.)
+- `Sass (SCSS)` con:
+  - Variables
+  - Nesting
+  - Media Queries
+  - Animaciones (`@keyframes mover`)
+- `Git & GitHub` para control de versiones
+
+---
+
+## 📁 Estructura de carpetas
+
+```bash
+nomad-vibe/
+│
+├── index.html
+├── pages/
+│   ├── blog.html
+│   ├── contacto.html
+│   ├── destinos.html
+│   └── tips.html
+│
+├── img/              # Imágenes
+├── css/              # styles.css compilado
+├── sass/             # styles.scss original
+├── bootstrap/        # Bootstrap descargado
+└── README.md
+```

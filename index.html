@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - Nomad Vibe</title>
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <!-- CSS compilado desde Sass -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
-    <div class="grid-container">
-      <header class="grid-item header">
+    <header class="bg-custom text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center">
         <h1>NOMAD VIBE</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">Menú</a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid p-0">
             <button
               class="navbar-toggler"
               type="button"
@@ -29,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</a>
+                  <a class="nav-link active" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="pages/destinos.html">Destinos</a>
@@ -47,37 +53,53 @@
             </div>
           </div>
         </nav>
-      </header>
-      <main>
-        <section>
-          <h2>Conoce el mundo con alma nómada</h2>
-          <p>
-            Soy Ana y una de las cosas que más me mueve, es viajar, explorar y
-            conocer otras culturas. En este sitio, te compartiré mis
-            experiencias, consejos y recomendaciones.
-          </p>
-          <img src="img/viajera.png" alt="viajeras" />
-        </section>
-        <!-- seccion de paginas contenedor cajas */ -->
-        <section class="flex-container">
-          <div class="caja">
-            <h3>Sobre mí</h3>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <!-- Intro -->
+      <section class="text-center mb-5">
+        <h2>Conoce el mundo con alma nómada</h2>
+        <p class="lead">
+          Soy Ana y una de las cosas que más me mueve es viajar, explorar y
+          conocer otras culturas. En este sitio, te compartiré mis experiencias,
+          consejos y recomendaciones.
+        </p>
+        <img
+          src="img/viajera.png"
+          alt="viajeras"
+          class="img-fluid rounded shadow"
+        />
+      </section>
+
+      <!-- Cards -->
+      <section class="row text-center g-4">
+        <div class="col-md-4">
+          <div class="caja p-4 h-100 shadow-sm rounded bg-light">
+            <h3>🧍 Sobre mí</h3>
             <p>Conoce quién soy, qué me inspira y por qué viajo.</p>
           </div>
-          <div class="caja">
-            <h3>Mis destinos</h3>
+        </div>
+        <div class="col-md-4">
+          <div class="caja p-4 h-100 shadow-sm rounded bg-light">
+            <h3>🌍 Mis destinos</h3>
             <p>Explora los lugares que he visitado y mis recomendaciones.</p>
           </div>
-          <div class="caja">
-            <h3>Tips viajeros</h3>
+        </div>
+        <div class="col-md-4">
+          <div class="caja p-4 h-100 shadow-sm rounded bg-light">
+            <h3>✈️ Tips viajeros</h3>
             <p>Consejos para viajar como una pro y evitar problemas comunes.</p>
           </div>
-        </section>
-      </main>
-      <footer class="grid-item footer">
-        <p>&copy; 2025 Nomad Vibe- Coder House</p>
-      </footer>
-    </div>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-muted">
+      <p>&copy; 2025 Nomad Vibe - Coder House</p>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

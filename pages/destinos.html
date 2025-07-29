@@ -3,50 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinos - Nomad Vibe</title>
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/estilos.css" />
 
-    <title>Destinos - Nomad Vibe -</title>
+    <!-- Bootstrap y estilos -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
   <body>
     <div class="grid-container">
       <header class="grid-item header">
-        <h1>Nomad Vibe - By Ana</h1>
-        <nav class="nav">
-          <ul>
-            <!-- Enlaces del nav -->
-            <a class="nav-link" href="../index.html">Inicio</a>
-            <a class="nav-link" href="destinos.html">Destinos</a>
-            <a class="nav-link" href="tips.html">Tips</a>
-            <a class="nav-link" href="blog.html">Blog</a>
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </ul>
+        <h1 class="text-center my-3">Nomad Vibe</h1>
+        <nav
+          class="navbar navbar-expand-lg navbar-dark"
+          style="background-color: #ea6d2d"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">Menú</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="destinos.html"
+                    >Destinos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tips.html">Tips</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
 
-      <main class="grid-item main">
-        <h2>Mis destinos favoritos</h2>
-        <div class="flex-container">
-          <div class="caja">Patagonia, Chile</div>
-          <div class="caja">Cartagena, Colombia</div>
-          <div class="caja">Lisboa, Portugal</div>
-          <div class="caja">Tailandia</div>
+      <main class="container my-5">
+        <h2 class="text-center mb-4">Mis destinos favoritos</h2>
+        <div class="row text-center g-4 mb-5">
+          <div class="col-md-3">
+            <div class="caja p-3">🌄 Patagonia, Chile</div>
+          </div>
+          <div class="col-md-3">
+            <div class="caja p-3">🏝️ Cartagena, Colombia</div>
+          </div>
+          <div class="col-md-3">
+            <div class="caja p-3">🌇 Lisboa, Portugal</div>
+          </div>
+          <div class="col-md-3"><div class="caja p-3">🌴 Tailandia</div></div>
         </div>
 
-        <iframe
-          src="https://www.google.com/maps/d/u/2/embed?mid=1vkJYUUOPhFKCI19OwSXSfl4Fr9-by2g&ehbc=2E312F&noprof=1"
-          width="100%"
-          height="480"
-        ></iframe>
+        <div class="mb-5">
+          <iframe
+            src="https://www.google.com/maps/d/u/2/embed?mid=1vkJYUUOPhFKCI19OwSXSfl4Fr9-by2g&ehbc=2E312F&noprof=1"
+            width="100%"
+            height="480"
+            style="border: 0; border-radius: 10px"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
       </main>
-      <footer class="grid-item footer">
-        <p>&copy; 2025 Nomad Vibe- Coder House</p>
+
+      <footer class="text-center py-3">
+        <p>&copy; 2025 Nomad Vibe - Coder House</p>
       </footer>
     </div>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

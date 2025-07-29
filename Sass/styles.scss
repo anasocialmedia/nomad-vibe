@@ -1,0 +1,116 @@
+// Variables
+$color-principal: #ea6d2d;
+$color-secundario: #ffd8e2;
+$tipografia: "Poppins", sans-serif;
+
+// Animaciones
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+// Estructura general
+body {
+  font-family: $tipografia;
+  background-color: #ffffff;
+  color: #2c1b0c;
+  margin: 0;
+
+  h1 {
+    color: $color-principal;
+    animation: mover 1s ease-in-out infinite alternate;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    color: $color-principal;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px;
+  }
+
+  nav {
+    background-color: $color-principal;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+
+      li {
+        a {
+          color: white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// Tarjetas animadas
+.caja {
+  background-color: $color-secundario;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: #2c1b0c;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // Animación al cargar
+  animation: aparecer 0.8s ease-out forwards;
+  opacity: 0;
+
+  // Animación al hacer hover
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  h3 {
+    color: $color-principal;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .caja {
+    margin-bottom: 20px;
+  }
+}

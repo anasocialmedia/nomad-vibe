@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Nomad Vibe</title>
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
 
-    <title>Blog - Nomad Vibe</title>
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <!-- Bootstrap y estilos -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Nomad Vibe - By Ana</h1>
-      <nav>
-        <ul>
-          <!-- Enlaces del nav -->
-          <a class="nav-link" href="../index.html">Inicio</a>
-          <a class="nav-link" href="destinos.html">Destinos</a>
-          <a class="nav-link" href="tips.html">Tips</a>
-          <a class="nav-link" href="blog.html">Blog</a>
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </ul>
+    <header class="grid-item header">
+      <h1 class="text-center my-3">Nomad Vibe</h1>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #ea6d2d"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">Menú</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinos.html">Destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tips.html">Tips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <main>
-      <h2>Mi experiencia en Cusco</h2>
-      <p>
+
+    <main class="container my-5">
+      <h2 class="text-center mb-4">Mi experiencia en Cusco</h2>
+      <p class="text-center">
         Cusco fue una de esas ciudades que te roban el aliento. Cada rincón está
         lleno de historia, colores y energía. Subir a Machu Picchu al amanecer
         fue simplemente mágico.
       </p>
-      <img src="../img/cusco.jpg" alt="Cusco" />
+      <div class="text-center">
+        <img
+          src="../img/cusco.jpg"
+          alt="Cusco"
+          class="img-fluid rounded shadow mt-4"
+          style="max-width: 600px"
+        />
+      </div>
     </main>
-    <footer>
+
+    <footer class="text-center py-3">
       <p>&copy; 2025 Nomad Vibe - Coder House</p>
     </footer>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
