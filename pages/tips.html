@@ -6,7 +6,7 @@
     <title>Tips - Nomad Vibe</title>
     <meta
       name="description"
-      content="Consejos prácticos y recomendaciones para viajeras que quieren recorrer el mundo como una pro."
+      content="Consejos útiles y prácticos para mejorar tu experiencia de viaje por el mundo."
     />
 
     <!-- Google Fonts -->
@@ -15,21 +15,17 @@
       rel="stylesheet"
     />
 
-    <!-- Bootstrap y estilos -->
+    <!-- Bootstrap y tu CSS -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
   <body>
-    <div class="grid-container">
-      <header class="grid-item header">
-        <h1 class="text-center my-3">Nomad Vibe</h1>
-        <nav
-          class="navbar navbar-expand-lg navbar-dark"
-          style="background-color: #ea6d2d"
-        >
-          <div class="container">
-            <a class="navbar-brand" href="../index.html">Menú</a>
+    <header class="bg-custom text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="text-center">Nomad Vibe</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid p-0">
             <button
               class="navbar-toggler"
               type="button"
@@ -47,12 +43,7 @@
                   <a class="nav-link" href="destinos.html">Destinos</a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="tips.html"
-                    >Tips</a
-                  >
+                  <a class="nav-link active" href="tips.html">Tips</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="blog.html">Blog</a>
@@ -64,22 +55,65 @@
             </div>
           </div>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main class="container my-5">
-        <h2 class="text-center mb-4">Tips para viajar como una pro</h2>
-        <ol class="fs-5">
-          <li>🧳 Viaja liviana, pero con estrategia</li>
-          <li>🔌 Lleva un adaptador universal</li>
-          <li>🌍 Infórmate sobre la cultura local</li>
-          <li>📁 Haz una copia digital de tus documentos</li>
-        </ol>
-      </main>
+    <main class="container my-5">
+      <h2 class="text-center mb-4">Tips para viajar como una pro 🧳</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🎒 Viaja liviana</h5>
+              <p class="card-text">
+                Lleva solo lo necesario y apuesta por prendas versátiles que
+                puedas combinar fácilmente.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <footer class="text-center py-3">
-        <p>&copy; 2025 Nomad Vibe - Coder House</p>
-      </footer>
-    </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🔌 Adaptador universal</h5>
+              <p class="card-text">
+                No todos los países usan el mismo enchufe. Llevar un adaptador
+                es clave para cargar tus dispositivos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">📚 Cultura local</h5>
+              <p class="card-text">
+                Infórmate sobre las costumbres del país que visitas. Ser
+                respetuosa te abrirá muchas puertas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">💾 Copia de documentos</h5>
+              <p class="card-text">
+                Guarda una copia digital de tu pasaporte, visa y reservas en la
+                nube o en tu correo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center py-4 text-muted">
+      <p>&copy; 2025 Nomad Vibe - Coder House</p>
+    </footer>
 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
