@@ -584,6 +584,81 @@ p {
   font-size: 1rem;
 }
 
+/* ------------------ Compromiso: misión y visión ------------------ */
+
+.paneles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.4rem;
+}
+
+.panel {
+  padding: clamp(1.8rem, 3.5vw, 2.6rem);
+  background: linear-gradient(160deg, var(--azul) 0%, var(--azul-medio) 100%);
+  color: rgba(255, 255, 255, 0.82);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+.panel h3 {
+  position: relative;
+  padding-bottom: 0.9rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.panel h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 46px;
+  height: 2px;
+  background-color: var(--dorado);
+}
+
+.panel p {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+.ventajas {
+  list-style: none;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+}
+
+.ventajas li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 0.9rem;
+  align-items: start;
+  padding: 1.1rem 1.3rem;
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+}
+
+.ventajas .icono-redondo {
+  background-color: var(--azul-suave);
+}
+
+.ventajas strong {
+  display: block;
+  color: var(--azul);
+  font-size: 0.98rem;
+}
+
+.ventajas p {
+  margin: 0.15rem 0 0;
+  font-size: 0.9rem;
+  color: var(--gris);
+}
+
 /* ------------------ Servicios ------------------ */
 
 .rejilla {
@@ -599,6 +674,12 @@ p {
   border-radius: var(--radio);
   transition: transform 0.25s ease, box-shadow 0.25s ease,
     border-color 0.25s ease;
+}
+
+.seccion--clara .tarjeta,
+.seccion--clara .beneficios__lista li,
+.seccion--clara .ventajas li {
+  background-color: var(--crema);
 }
 
 .tarjeta:hover {
@@ -704,6 +785,11 @@ p {
   color: #ffffff;
   font-size: 0.75rem;
   font-weight: 700;
+}
+
+.seccion--arena .beneficios__lista li,
+.seccion--arena .ventajas li {
+  background-color: #ffffff;
 }
 
 /* ------------------ Pasos ------------------ */
