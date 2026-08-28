@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nancy Torrealba | Asesora en Previsión Familiar</title>
+    <meta
+      name="description"
+      content="Nancy Torrealba, asesora con más de 30 años de experiencia en el sector funerario. Planes de previsión familiar, cremación e inhumación con cobertura nacional y atención 24 horas en Maracay, Aragua."
+    />
+    <meta name="author" content="Nancy Torrealba" />
+    <meta name="theme-color" content="#16255a" />
+
+    <!-- Redes sociales -->
+    <meta
+      property="og:title"
+      content="Nancy Torrealba | Asesora en Previsión Familiar"
+    />
+    <meta
+      property="og:description"
+      content="Más de 30 años acompañando familias. Planes de previsión familiar, cremación e inhumación con cobertura nacional y atención 24 horas."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="es_VE" />
+
+    <!-- Ícono (paloma, en línea para no depender de archivos externos) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2316255a'/><text x='50' y='70' font-size='58' text-anchor='middle' fill='%23ffffff' font-family='Georgia,serif'>N</text></svg>"
+    />
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ============ Barra superior ============ -->
+    <header class="barra" id="inicio">
+      <div class="contenedor barra__interior">
+        <a class="marca" href="#inicio">
+          <span class="marca__simbolo" aria-hidden="true">NT</span>
+          <span>
+            <span class="marca__nombre">Nancy Torrealba</span>
+            <span class="marca__rol">Previsión familiar</span>
+          </span>
+        </a>
+
+        <button
+          class="barra__boton"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span></span>
+        </button>
+
+        <nav aria-label="Navegación principal">
+          <ul class="menu" id="menu-principal">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicio">El servicio</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li>
+              <a class="boton boton--primario" href="#contacto">Hablemos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ Portada ============ -->
+      <section class="portada">
+        <div class="contenedor portada__interior">
+          <div class="portada__texto">
+            <span class="antetitulo">Asesora en previsión familiar</span>
+            <h1>
+              Tranquilidad para tu familia
+              <span class="destacado">antes de que haga falta</span>
+            </h1>
+            <p>
+              Soy <strong>Nancy Torrealba</strong> y llevo más de 30 años
+              acompañando familias en el momento más difícil. Hoy ayudo a que
+              ese momento no las tome por sorpresa: planes de previsión
+              familiar, cremación e inhumación, explicados con calma y sin letra
+              pequeña.
+            </p>
+
+            <div class="portada__acciones">
+              <a
+                class="boton boton--primario"
+                href="https://wa.me/584243033957?text=Hola%20Nancy%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20de%20previsi%C3%B3n%20familiar."
+                target="_blank"
+                rel="noopener"
+              >
+                Escribirme por WhatsApp
+              </a>
+              <a class="boton boton--secundario" href="#servicio">
+                Ver qué incluye el plan
+              </a>
+            </div>
+
+            <p class="portada__aval">
+              <span
+                ><strong>+30 años</strong> de experiencia en el sector
+                funerario</span
+              >
+            </p>
+          </div>
+
+          <div class="retrato">
+            <div class="retrato__marco">
+              <!--
+                Para colocar la foto de Nancy: guarda la imagen como
+                img/nancy.jpg y descomenta la siguiente línea.
+                <img src="img/nancy.jpg" alt="Nancy Torrealba, asesora en previsión familiar" />
+              -->
+              <div class="retrato__inicial">
+                <span>NT</span>
+                <small>Nancy Torrealba</small>
+              </div>
+            </div>
+            <div class="retrato__sello">
+              <strong>30+</strong>
+              <span>Años de experiencia</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Franja de confianza ============ -->
+      <section class="franja" aria-label="Datos principales del servicio">
+        <div class="contenedor">
+          <ul class="franja__lista">
+            <li>
+              <strong>24 horas</strong>
+              <span>Atención permanente, todos los días</span>
+            </li>
+            <li>
+              <strong>Nacional</strong>
+              <span>Cobertura en todo el país</span>
+            </li>
+            <li>
+              <strong>7</strong>
+              <span>Beneficiarios de tu preferencia</span>
+            </li>
+            <li>
+              <strong>Sin límite</strong>
+              <span>De edad para afiliarse</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ Sobre Nancy ============ -->
+      <section class="seccion seccion--clara" id="sobre-mi">
+        <div class="contenedor perfil revelar">
+          <div class="perfil__cita">
+            <blockquote>
+              “Nadie quiere hablar de esto. Pero las familias que sí lo hablaron
+              a tiempo son las que después pudieron despedirse tranquilas.”
+            </blockquote>
+            <footer>Nancy Torrealba</footer>
+          </div>
+
+          <div class="perfil__texto">
+            <span class="antetitulo">Sobre mí</span>
+            <h2>Más de 30 años del lado de las familias</h2>
+            <p>
+              Empecé en el sector funerario cuando aún se hacía todo a pulso: el
+              traslado, los permisos, la sala de velación, la llamada de
+              madrugada. En estas tres décadas he acompañado a cientos de
+              familias en Maracay y en todo el país, y aprendí que lo que más
+              alivia no es el trámite resuelto, sino sentir que alguien de
+              confianza se está ocupando.
+            </p>
+            <p>
+              Hoy dedico ese conocimiento a la previsión: explicarte con calma
+              qué cubre un plan, qué no, y cómo dejar todo listo para que tu
+              familia no tenga que decidir ni buscar dinero en el peor momento.
+            </p>
+
+            <ul class="perfil__valores">
+              <li>
+                <span class="icono-redondo" aria-hidden="true">♡</span>
+                <div>
+                  <strong>Trato humano, no comercial</strong>
+                  <p>
+                    Primero escucho tu situación familiar. La recomendación viene
+                    después.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="icono-redondo" aria-hidden="true">✓</span>
+                <div>
+                  <strong>Claridad total</strong>
+                  <p>
+                    Te explico coberturas, condiciones y alcance antes de que
+                    firmes nada.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="icono-redondo" aria-hidden="true">☎</span>
+                <div>
+                  <strong>Acompañamiento real</strong>
+                  <p>
+                    Cuando llegue el momento, tu familia me llama a mí y yo
+                    activo todo.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Servicios ============ -->
+      <section class="seccion seccion--arena" id="servicio">
+        <div class="contenedor">
+          <div class="encabezado-seccion revelar">
+            <span class="antetitulo">El servicio incluye</span>
+            <h2>Todo resuelto, desde el primer momento</h2>
+            <p>
+              Un solo plan cubre el acompañamiento completo: velación, traslado,
+              trámites legales y destino final, con la opción de inhumación o
+              cremación.
+            </p>
+          </div>
+
+          <div class="rejilla revelar">
+            <article class="tarjeta">
+              <div class="tarjeta__icono" aria-hidden="true">🕯️</div>
+              <h3>Velación y acompañamiento</h3>
+              <ul>
+                <li>Sala de velación en agencia o a domicilio</li>
+                <li>20 sillas, capilla móvil y kit de cafetería</li>
+                <li>Habitación de descanso para los familiares</li>
+                <li>
+                  Cafetería en agencia: café, manzanilla, té, chocolate, desayuno
+                  y consomé
+                </li>
+              </ul>
+            </article>
+
+            <article class="tarjeta">
+              <div class="tarjeta__icono" aria-hidden="true">⚱️</div>
+              <h3>Ataúd incluido</h3>
+              <ul>
+                <li>Ataúd de madera</li>
+                <li>Ataúd de lujo para cremación</li>
+                <li>Selección acompañada, sin costos sorpresa</li>
+              </ul>
+            </article>
+
+            <article class="tarjeta">
+              <div class="tarjeta__icono" aria-hidden="true">🤍</div>
+              <h3>Preparación del ser querido</h3>
+              <ul>
+                <li>Servicio de preparación normal del cuerpo</li>
+                <li>Aseo, vestimenta y maquillaje</li>
+                <li>Conservación con formol por 24 horas</li>
+              </ul>
+            </article>
+
+            <article class="tarjeta">
+              <div class="tarjeta__icono" aria-hidden="true">🚐</div>
+              <h3>Traslados en carroza</h3>
+              <ul>
+                <li>Carroza para el retiro del fallecido</li>
+                <li>Carroza para el sepelio</li>
+                <li>Coordinación de horarios con la familia</li>
+              </ul>
+            </article>
+
+            <article class="tarjeta">
+              <div class="tarjeta__icono" aria-hidden="true">📄</div>
+              <h3>Trámites y permisos</h3>
+              <ul>
+                <li>Diligencia de ley</li>
+                <li>Permiso de traslado</li>
+                <li>Permiso sanitario</li>
+              </ul>
+            </article>
+
+            <article class="tarjeta">
+              <div class="tarjeta__icono" aria-hidden="true">🕊️</div>
+              <h3>Inhumación o cremación</h3>
+              <ul>
+                <li>Un puesto de fosa en cementerio municipal</li>
+                <li>Servicio de cremación</li>
+                <li>Válido a nivel nacional</li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="nota revelar">
+            <strong>Instalaciones propias y respuesta inmediata.</strong>
+            El servicio lo presta una empresa funeraria altamente calificada, con
+            atención permanente las 24 horas. Los servicios deben ser canalizados
+            y autorizados previamente a través de tu asesora.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ Beneficios ============ -->
+      <section class="seccion seccion--clara" id="beneficios">
+        <div class="contenedor beneficios revelar">
+          <div>
+            <span class="antetitulo">Beneficios del plan</span>
+            <h2>Se adapta a tu familia, no al revés</h2>
+            <p>
+              Puedes incluir <strong>hasta 7 beneficiarios de tu
+              preferencia</strong>, sin límite de edad. Da igual si es tu mamá,
+              tu suegra, tu tío o el vecino que crió a tus hijos: la familia la
+              defines tú.
+            </p>
+            <p>
+              Y si algún día necesitas cambiar algo, me escribes y lo revisamos
+              juntos.
+            </p>
+            <a class="boton boton--primario" href="#contacto"
+              >Quiero armar mi plan</a
+            >
+          </div>
+
+          <ul class="beneficios__lista">
+            <li>Hasta 7 beneficiarios elegidos por ti</li>
+            <li>Sin límite de edad para afiliarse</li>
+            <li>Cobertura a nivel nacional</li>
+            <li>Atención permanente las 24 horas del día</li>
+            <li>Instalaciones propias, sin intermediarios</li>
+            <li>Opción de inhumación o cremación</li>
+            <li>Asesoría personal antes, durante y después</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ Cómo funciona ============ -->
+      <section class="seccion seccion--arena">
+        <div class="contenedor">
+          <div class="encabezado-seccion revelar">
+            <span class="antetitulo">Cómo empezamos</span>
+            <h2>Cuatro pasos, sin compromiso</h2>
+            <p>
+              La primera conversación es solo para entender tu caso. Nadie firma
+              nada por WhatsApp.
+            </p>
+          </div>
+
+          <div class="pasos revelar">
+            <article class="paso">
+              <h3>Conversamos</h3>
+              <p>
+                Me escribes por WhatsApp o me llamas. Me cuentas quiénes son los
+                tuyos y qué te preocupa.
+              </p>
+            </article>
+            <article class="paso">
+              <h3>Armamos el plan</h3>
+              <p>
+                Elegimos juntos a los beneficiarios y la modalidad: inhumación o
+                cremación.
+              </p>
+            </article>
+            <article class="paso">
+              <h3>Activamos</h3>
+              <p>
+                Completamos la afiliación con toda la información clara y por
+                escrito.
+              </p>
+            </article>
+            <article class="paso">
+              <h3>Te acompaño</h3>
+              <p>
+                Si llega el momento, tu familia me llama a mí y yo me encargo del
+                resto.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Preguntas frecuentes ============ -->
+      <section class="seccion seccion--clara" id="preguntas">
+        <div class="contenedor">
+          <div class="encabezado-seccion revelar">
+            <span class="antetitulo">Preguntas frecuentes</span>
+            <h2>Lo que todo el mundo me pregunta</h2>
+          </div>
+
+          <div class="preguntas revelar">
+            <details class="pregunta">
+              <summary>¿Hay un límite de edad para afiliarse?</summary>
+              <p>
+                No. El plan se puede contratar sin límite de edad, tanto para el
+                titular como para los beneficiarios que decidas incluir.
+              </p>
+            </details>
+
+            <details class="pregunta">
+              <summary>¿A cuántas personas puedo incluir?</summary>
+              <p>
+                Puedes incluir hasta 7 beneficiarios de tu preferencia. No tienen
+                que ser familiares directos: tú eliges a quién proteger.
+              </p>
+            </details>
+
+            <details class="pregunta">
+              <summary>¿Sirve si vivo fuera de Maracay?</summary>
+              <p>
+                Sí. La cobertura es a nivel nacional, incluyendo el puesto de
+                fosa en cementerio municipal y el servicio de cremación.
+              </p>
+            </details>
+
+            <details class="pregunta">
+              <summary>¿Puedo elegir entre cremación e inhumación?</summary>
+              <p>
+                Sí. El plan contempla ambas modalidades, con el ataúd
+                correspondiente en cada caso.
+              </p>
+            </details>
+
+            <details class="pregunta">
+              <summary>¿Qué pasa si ocurre de madrugada o un feriado?</summary>
+              <p>
+                La atención es permanente, las 24 horas, todos los días del año.
+                Existen líneas de emergencia disponibles en todo momento.
+              </p>
+            </details>
+
+            <details class="pregunta">
+              <summary>¿Cómo se activa el servicio cuando hace falta?</summary>
+              <p>
+                Tu familia se comunica conmigo o con las líneas de emergencia. A
+                partir de ahí los servicios se canalizan y autorizan
+                directamente, sin que ustedes tengan que hacer diligencias.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Contacto ============ -->
+      <section class="seccion contacto" id="contacto">
+        <div class="contenedor contacto__interior">
+          <div class="contacto__texto revelar">
+            <span class="antetitulo">Hablemos</span>
+            <h2>Escríbeme y lo vemos con calma</h2>
+            <p>
+              Sin apuros y sin compromiso. Cuéntame tu caso y te explico
+              exactamente qué cubre el plan y cuánto cuesta.
+            </p>
+
+            <ul class="datos">
+              <li>
+                <span class="icono-redondo" aria-hidden="true">✆</span>
+                <div>
+                  <span>WhatsApp / Teléfono</span>
+                  <a href="https://wa.me/584243033957" target="_blank" rel="noopener"
+                    >0424 303 39 57</a
+                  >
+                </div>
+              </li>
+              <li>
+                <span class="icono-redondo" aria-hidden="true">⏱</span>
+                <div>
+                  <span>Emergencias 24 horas</span>
+                  <a href="tel:+584124609004">0412 460 90 04</a>
+                </div>
+              </li>
+              <li>
+                <span class="icono-redondo" aria-hidden="true">⏱</span>
+                <div>
+                  <span>Emergencias 24 horas</span>
+                  <a href="tel:+584144901386">0414 490 13 86</a>
+                </div>
+              </li>
+              <li>
+                <span class="icono-redondo" aria-hidden="true">☎</span>
+                <div>
+                  <span>Oficina</span>
+                  <a href="tel:+582432463787">(0243) 246 37 87</a>
+                </div>
+              </li>
+              <li>
+                <span class="icono-redondo" aria-hidden="true">⚲</span>
+                <div>
+                  <span>Atención presencial</span>
+                  <strong
+                    >Av. Principal del Milagro, Urb. El Milagro. Maracay, Edo.
+                    Aragua</strong
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="formulario revelar" id="formulario-contacto">
+            <h3>Solicita información</h3>
+            <p class="formulario__intro">
+              Completa los datos y se abrirá WhatsApp con tu mensaje listo para
+              enviar.
+            </p>
+
+            <label class="campo">
+              <span>Nombre y apellido</span>
+              <input
+                type="text"
+                name="nombre"
+                required
+                autocomplete="name"
+                placeholder="Ej. María González"
+              />
+            </label>
+
+            <label class="campo">
+              <span>Ciudad</span>
+              <input
+                type="text"
+                name="ciudad"
+                required
+                placeholder="Ej. Maracay"
+              />
+            </label>
+
+            <label class="campo">
+              <span>¿Qué te interesa?</span>
+              <select name="interes" required>
+                <option value="un plan de previsión familiar">
+                  Un plan de previsión familiar
+                </option>
+                <option value="información sobre cremación">
+                  Información sobre cremación
+                </option>
+                <option value="información sobre inhumación">
+                  Información sobre inhumación
+                </option>
+                <option value="un servicio inmediato">
+                  Necesito un servicio inmediato
+                </option>
+              </select>
+            </label>
+
+            <label class="campo">
+              <span>Cuéntame brevemente (opcional)</span>
+              <textarea
+                name="mensaje"
+                placeholder="Cuántas personas quieres incluir, dudas que tengas…"
+              ></textarea>
+            </label>
+
+            <button class="boton boton--primario boton--ancho" type="submit">
+              Enviar por WhatsApp
+            </button>
+            <p class="formulario__aviso">
+              Tus datos solo se usan para responderte. No se guardan en este
+              sitio.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ Pie ============ -->
+    <footer class="pie">
+      <div class="contenedor pie__interior">
+        <p style="margin: 0">
+          <strong>Nancy Torrealba</strong><br />
+          Asesora en previsión familiar · Maracay, Edo. Aragua
+        </p>
+        <p style="margin: 0">
+          &copy; <span id="anio">2025</span> Nancy Torrealba ·
+          <a href="https://wa.me/584243033957" target="_blank" rel="noopener"
+            >WhatsApp 0424 303 39 57</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <a
+      class="flotante"
+      href="https://wa.me/584243033957?text=Hola%20Nancy%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20de%20previsi%C3%B3n%20familiar."
+      target="_blank"
+      rel="noopener"
+      aria-label="Escribir por WhatsApp a Nancy Torrealba"
+    >
+      <span aria-hidden="true">💬</span><span>WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

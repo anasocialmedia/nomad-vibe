@@ -50,3 +50,24 @@ nomad-vibe/
 ├── bootstrap/        # Bootstrap descargado
 └── README.md
 ```
+
+---
+
+## 💼 Landing adicional: Nancy Torrealba
+
+Dentro del repositorio también vive una landing page independiente de marca
+personal para **Nancy Torrealba**, asesora en previsión familiar con más de 30
+años de experiencia en el sector funerario.
+
+🔗 **[Ver landing](https://anasocialmedia.github.io/nomad-vibe/nancy-torrealba/)**
+
+```bash
+nancy-torrealba/
+├── index.html      # Landing completa (una sola página)
+├── styles.css      # Estilos propios, sin dependencias
+├── script.js       # Menú móvil, animaciones y formulario a WhatsApp
+└── img/            # Aquí va la foto (ver img/LEEME.txt)
+```
+
+Es autocontenida: no usa Bootstrap ni el `styles.css` de Nomad Vibe, así que se
+puede mover a su propio dominio copiando la carpeta.
