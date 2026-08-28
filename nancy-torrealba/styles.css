@@ -956,6 +956,10 @@ p {
   text-decoration: underline;
 }
 
+.contacto__boton {
+  margin-top: 2.2rem;
+}
+
 .formulario {
   padding: clamp(1.6rem, 4vw, 2.4rem);
   background-color: #ffffff;

@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  var WHATSAPP = "584243033957";
+  var WHATSAPP = "584144776156";
 
   /* ---------- Menú móvil ---------- */
   var botonMenu = document.querySelector(".barra__boton");
