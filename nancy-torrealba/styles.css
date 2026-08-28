@@ -1050,6 +1050,27 @@ p {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.pie__aval {
+  margin-top: 1.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pie__aval p {
+  margin: 0;
+  max-width: 78ch;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.pie__aval strong {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+}
+
 /* ------------------ Botón flotante ------------------ */
 
 .flotante {
