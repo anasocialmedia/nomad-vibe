@@ -925,9 +925,28 @@ p {
 /* ------------------ Contacto ------------------ */
 
 .contacto {
-  background: linear-gradient(160deg, var(--azul) 0%, #101a41 100%);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(165deg, #1b2d69 0%, var(--azul) 42%, #0e1738 100%);
   color: #ffffff;
   text-align: center;
+}
+
+/* Arcos de fondo: refuerzan el motivo sin robar atención */
+.ondas {
+  position: absolute;
+  inset: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  color: var(--arena);
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.contacto__interior {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
 }
 
 .contacto h2 {
@@ -938,82 +957,129 @@ p {
   color: var(--arena);
 }
 
-.contacto__interior {
-  max-width: 640px;
-}
-
 .contacto__entrada {
   margin: 0 auto;
-  max-width: 46ch;
-  color: rgba(255, 255, 255, 0.75);
+  max-width: 44ch;
+  color: rgba(255, 255, 255, 0.78);
 }
 
-/* Tarjeta del teléfono: el único destino de la página */
-.tarjeta-tel {
-  display: block;
-  margin: 2.6rem auto 0;
-  max-width: 420px;
-  padding: 1.7rem 1.5rem 1.4rem;
+/* Ficha: una tarjeta de contacto, no un cuadro suelto */
+.ficha {
+  margin: 2.8rem auto 0;
+  max-width: 480px;
+  padding: 1.5rem 1.5rem 1.7rem;
   background-color: #ffffff;
-  border-radius: var(--radio);
-  text-decoration: none;
-  box-shadow: 0 30px 60px -35px rgba(0, 0, 0, 0.75);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 22px;
+  box-shadow: 0 34px 70px -34px rgba(0, 0, 0, 0.8);
 }
 
-.tarjeta-tel:hover,
-.tarjeta-tel:focus-visible {
-  transform: translateY(-3px);
-  box-shadow: 0 36px 66px -32px rgba(0, 0, 0, 0.8);
+.ficha__quien {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--borde);
+  text-align: left;
 }
 
-.tarjeta-tel__etiqueta {
+.ficha__foto {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 14%;
+  border: 2px solid var(--arena-suave);
+}
+
+.ficha__quien strong {
   display: block;
-  font-size: 0.72rem;
+  white-space: nowrap;
+  font-family: var(--serif);
+  font-size: 1.2rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--gris);
-}
-
-.tarjeta-tel__numero {
-  display: block;
-  margin: 0.45rem 0 0.3rem;
-  font-family: var(--sans);
-  font-size: clamp(2rem, 6vw, 2.6rem);
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  line-height: 1.2;
   color: var(--azul);
 }
 
-.tarjeta-tel__pie {
+.ficha__quien > div span {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--gris);
+}
+
+.ficha__estado {
+  margin-left: auto;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.85rem;
-  font-weight: 500;
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  background-color: rgba(15, 125, 60, 0.1);
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
   color: var(--verde);
 }
 
-.tarjeta-tel__pie .ico {
-  font-size: 1.05rem;
+.ficha__estado::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--verde);
+}
+
+.ficha__numero {
+  display: block;
+  margin-top: 1.4rem;
+  font-size: clamp(2.1rem, 6.5vw, 2.7rem);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--azul);
+  text-decoration: none;
+}
+
+.ficha__nota {
+  margin: 0.3rem 0 1.3rem;
+  font-size: 0.82rem;
+  color: var(--gris);
+}
+
+.boton--whatsapp {
+  width: 100%;
+  background-color: var(--verde);
+  color: #ffffff;
+  box-shadow: 0 18px 34px -18px rgba(15, 125, 60, 0.9);
+}
+
+.boton--whatsapp:hover,
+.boton--whatsapp:focus-visible {
+  background-color: #0c6a33;
+  color: #ffffff;
+}
+
+.boton--whatsapp .ico {
+  font-size: 1.15rem;
 }
 
 .contacto__direccion {
-  margin: 2.4rem auto 0;
-  font-size: 0.92rem;
-  line-height: 1.65;
-  color: rgba(255, 255, 255, 0.62);
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 2.2rem auto 0;
+  max-width: 42ch;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.68);
 }
 
-.contacto__direccion span {
-  display: block;
-  margin-bottom: 0.45rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
+.contacto__direccion .ico {
+  margin-top: 0.15rem;
+  font-size: 1.05rem;
+  color: var(--arena);
 }
 
 /* ------------------ Pie ------------------ */
@@ -1189,6 +1255,15 @@ p {
   .franja__lista {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.8rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ficha__estado {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
   }
 }
 
