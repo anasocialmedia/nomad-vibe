@@ -989,7 +989,7 @@ p {
   flex-shrink: 0;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 14%;
+  object-position: center 18%;
   border: 2px solid var(--arena-suave);
 }
 

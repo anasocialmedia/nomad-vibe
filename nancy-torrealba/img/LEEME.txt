@@ -1,8 +1,11 @@
-nancy.jpg — retrato de Nancy en la portada.
+nancy.jpg — retrato de Nancy en la portada y en la ficha de contacto.
 
-La foto actual se recortó del flyer impreso, así que su resolución es
-limitada (686 x 858 px). Cuando haya una toma original, sustituir el
-archivo manteniendo el nombre y la proporción 4:5 (ideal: 1000 x 1250 px
-o más, fondo liso, luz suave, retrato de medio cuerpo).
+Foto de estudio, 900 x 1125 px (proporción 4:5).
 
-No hace falta tocar el HTML: la portada la toma de img/nancy.jpg.
+Para reemplazarla: mismo nombre, misma proporción 4:5, mínimo 900 px de
+ancho, con aire sobre la cabeza (la portada la recorta en forma de arco).
+No hace falta tocar el HTML.
+
+Si cambia la foto, conviene regenerar también:
+  - img/preview.jpg          (tarjeta que se ve al compartir el enlace)
+  - marca/flyer-*.png / .pdf (el flyer usa el mismo retrato)
