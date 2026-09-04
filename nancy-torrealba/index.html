@@ -41,6 +41,85 @@
   </head>
 
   <body>
+    <!-- Juego de iconos: trazo de 1.5, esquinas redondeadas -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="i-vela" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2.5c1.7 1.8 2.5 3.1 2.5 4a2.5 2.5 0 0 1-5 0c0-.9.8-2.2 2.5-4Z" />
+          <path d="M12 8.5v1.6" />
+          <rect x="8.6" y="10.1" width="6.8" height="9.4" rx="1.6" />
+          <path d="M5.5 19.5h13" />
+        </symbol>
+
+        <symbol id="i-ataud" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9.2 2.8h5.6l2.2 6.4-2.2 12h-5.6l-2.2-12 2.2-6.4Z" />
+          <path d="M12 8.6v5.2M9.9 10.6h4.2" />
+        </symbol>
+
+        <symbol id="i-corazon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20.4S4.3 15.7 4.3 10.5A4.4 4.4 0 0 1 12 7.7a4.4 4.4 0 0 1 7.7 2.8c0 5.2-7.7 9.9-7.7 9.9Z" />
+        </symbol>
+
+        <symbol id="i-carroza" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2.6 16.4V9.2a1 1 0 0 1 1-1h9.1v8.2" />
+          <path d="M12.7 10.8h3.5a2 2 0 0 1 1.7 1l2.2 3.5v1.1h-1.9" />
+          <circle cx="7.1" cy="17.4" r="1.9" />
+          <circle cx="16.4" cy="17.4" r="1.9" />
+          <path d="M9 17.4h5.5M5.2 11.4h4.4" />
+        </symbol>
+
+        <symbol id="i-documento" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13.9 2.8H7a1.6 1.6 0 0 0-1.6 1.6v15.2A1.6 1.6 0 0 0 7 21.2h10a1.6 1.6 0 0 0 1.6-1.6V7.5l-4.7-4.7Z" />
+          <path d="M13.9 2.8v4.7h4.7" />
+          <path d="M8.4 12.4h7.2M8.4 15.6h7.2M8.4 18.2h4.1" />
+        </symbol>
+
+        <symbol id="i-paloma" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 4.4c-1.5 3-3.7 4.8-6.4 5.4.9 2.9-.2 5.4-3.1 6.9-3.1 1.6-6.8.6-8.8-2.2 3.5.9 5.7.1 6.7-2.3-2.9-.2-4.9-1.8-5.7-4.7 1.5 1.2 3 1.7 4.7 1.5-1.7-2-1.7-4.2 0-6.1.3 2.8 1.8 4.5 4.4 4.9 2.3.3 4.6-.8 8.2-3.4Z" />
+          <path d="M9.1 16.6 7.6 21.2" />
+        </symbol>
+
+        <symbol id="i-escudo" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2.8 5.2 5.5v5.4c0 4.3 2.9 8.2 6.8 9.3 3.9-1.1 6.8-5 6.8-9.3V5.5L12 2.8Z" />
+          <path d="m9.1 11.7 2.2 2.2 4-4.2" />
+        </symbol>
+
+        <symbol id="i-telefono" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6.6 3.4h2.9l1.5 3.9-2 1.4a12.5 12.5 0 0 0 6.2 6.2l1.4-2 3.9 1.5v2.9a2 2 0 0 1-2.2 2C10.8 18.6 5.4 13.2 4.6 5.6a2 2 0 0 1 2-2.2Z" />
+        </symbol>
+
+        <symbol id="i-globo" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="8.6" />
+          <path d="M3.4 12h17.2" />
+          <path d="M12 3.4c2.3 2.4 3.6 5.4 3.6 8.6s-1.3 6.2-3.6 8.6c-2.3-2.4-3.6-5.4-3.6-8.6S9.7 5.8 12 3.4Z" />
+        </symbol>
+
+        <symbol id="i-rayo" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13.4 2.6 5.2 13.4h5.7l-.6 8 8.5-10.8h-5.8l.4-8Z" />
+        </symbol>
+
+        <symbol id="i-medalla" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="9" r="5.6" />
+          <path d="m8.3 13.5-1.2 8 4.9-2.6 4.9 2.6-1.2-8" />
+        </symbol>
+
+        <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2.02c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22.02l5.16-1.35a9.93 9.93 0 0 0 4.88 1.24h.01c5.49 0 9.95-4.46 9.95-9.96a9.9 9.9 0 0 0-2.91-7.04 9.88 9.88 0 0 0-7.05-2.89Zm0 18.2h-.01c-1.48 0-2.94-.4-4.21-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.24 8.24 0 0 1-1.27-4.4c0-4.56 3.72-8.28 8.29-8.28 2.21 0 4.29.87 5.85 2.43a8.22 8.22 0 0 1 2.42 5.86c0 4.57-3.72 8.26-8.28 8.26Zm4.54-6.19c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.24a7.5 7.5 0 0 1-1.38-1.72c-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42h-.47c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.16 1.75 2.68 4.25 3.76.59.25 1.06.4 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.19-.06-.1-.22-.16-.47-.28Z" />
+        </symbol>
+      </defs>
+    </svg>
+
     <!-- ============ Barra superior ============ -->
     <header class="barra" id="inicio">
       <div class="contenedor barra__interior">
@@ -188,7 +267,7 @@
 
             <ul class="perfil__valores">
               <li>
-                <span class="icono-redondo" aria-hidden="true">♡</span>
+                <span class="icono-redondo"><svg class="ico" aria-hidden="true"><use href="#i-corazon" /></svg></span>
                 <div>
                   <strong>Trato humano, no comercial</strong>
                   <p>
@@ -198,7 +277,7 @@
                 </div>
               </li>
               <li>
-                <span class="icono-redondo" aria-hidden="true">✓</span>
+                <span class="icono-redondo"><svg class="ico" aria-hidden="true"><use href="#i-escudo" /></svg></span>
                 <div>
                   <strong>Claridad total</strong>
                   <p>
@@ -208,7 +287,7 @@
                 </div>
               </li>
               <li>
-                <span class="icono-redondo" aria-hidden="true">☎</span>
+                <span class="icono-redondo"><svg class="ico" aria-hidden="true"><use href="#i-telefono" /></svg></span>
                 <div>
                   <strong>Acompañamiento real</strong>
                   <p>
@@ -253,28 +332,28 @@
 
           <ul class="ventajas revelar">
             <li>
-              <span class="icono-redondo" aria-hidden="true">◎</span>
+              <span class="icono-redondo"><svg class="ico" aria-hidden="true"><use href="#i-globo" /></svg></span>
               <div>
                 <strong>Cobertura a nivel nacional</strong>
                 <p>Donde estés en el país, el plan responde.</p>
               </div>
             </li>
             <li>
-              <span class="icono-redondo" aria-hidden="true">⚡</span>
+              <span class="icono-redondo"><svg class="ico" aria-hidden="true"><use href="#i-rayo" /></svg></span>
               <div>
                 <strong>Cobertura inmediata</strong>
                 <p>Sin largas esperas para poder usar el servicio.</p>
               </div>
             </li>
             <li>
-              <span class="icono-redondo" aria-hidden="true">☎</span>
+              <span class="icono-redondo"><svg class="ico" aria-hidden="true"><use href="#i-telefono" /></svg></span>
               <div>
                 <strong>Se activa con una llamada</strong>
                 <p>Una sola llamada telefónica pone todo en marcha.</p>
               </div>
             </li>
             <li>
-              <span class="icono-redondo" aria-hidden="true">✦</span>
+              <span class="icono-redondo"><svg class="ico" aria-hidden="true"><use href="#i-medalla" /></svg></span>
               <div>
                 <strong>Personal totalmente calificado</strong>
                 <p>Coordinación directa, sin intermediarios.</p>
@@ -282,12 +361,27 @@
             </li>
           </ul>
 
-          <p class="nota revelar">
-            <strong>Respaldo:</strong> los planes y servicios son prestados por
-            <strong>Previsivos Luz del Cielo 2022, C.A.</strong>, empresa
-            funeraria dueña de sus propias instalaciones en Maracay, estado
-            Aragua. Yo soy su asesora: te acompaño antes, durante y después.
-          </p>
+          <div class="respaldo revelar">
+            <img
+              class="respaldo__logo"
+              src="img/logo-luz-del-cielo.png"
+              width="400"
+              height="372"
+              alt="Previsivos Luz del Cielo"
+            />
+            <div>
+              <span class="antetitulo">Respaldo institucional</span>
+              <h3>
+                Nancy es asesora de Previsivos Luz del Cielo 2022, C.A.
+              </h3>
+              <p>
+                Todos los planes y servicios se prestan y se canalizan a través
+                de esta empresa funeraria, dueña de sus propias instalaciones en
+                Maracay. Ella te acompaña de principio a fin: te asesora antes de
+                contratar y, cuando llegue el momento, activa el servicio por ti.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -306,7 +400,7 @@
 
           <div class="rejilla revelar">
             <article class="tarjeta">
-              <div class="tarjeta__icono" aria-hidden="true">🕯️</div>
+              <div class="tarjeta__icono"><svg class="ico" aria-hidden="true"><use href="#i-vela" /></svg></div>
               <h3>Velación y acompañamiento</h3>
               <ul>
                 <li>Sala de velación en agencia o a domicilio</li>
@@ -320,7 +414,7 @@
             </article>
 
             <article class="tarjeta">
-              <div class="tarjeta__icono" aria-hidden="true">⚱️</div>
+              <div class="tarjeta__icono"><svg class="ico" aria-hidden="true"><use href="#i-ataud" /></svg></div>
               <h3>Ataúd incluido</h3>
               <ul>
                 <li>Ataúd de madera</li>
@@ -330,7 +424,7 @@
             </article>
 
             <article class="tarjeta">
-              <div class="tarjeta__icono" aria-hidden="true">🤍</div>
+              <div class="tarjeta__icono"><svg class="ico" aria-hidden="true"><use href="#i-corazon" /></svg></div>
               <h3>Preparación del ser querido</h3>
               <ul>
                 <li>Servicio de preparación normal del cuerpo</li>
@@ -340,7 +434,7 @@
             </article>
 
             <article class="tarjeta">
-              <div class="tarjeta__icono" aria-hidden="true">🚐</div>
+              <div class="tarjeta__icono"><svg class="ico" aria-hidden="true"><use href="#i-carroza" /></svg></div>
               <h3>Traslados en carroza</h3>
               <ul>
                 <li>Carroza para el retiro del fallecido</li>
@@ -350,7 +444,7 @@
             </article>
 
             <article class="tarjeta">
-              <div class="tarjeta__icono" aria-hidden="true">📄</div>
+              <div class="tarjeta__icono"><svg class="ico" aria-hidden="true"><use href="#i-documento" /></svg></div>
               <h3>Trámites y permisos</h3>
               <ul>
                 <li>Diligencia de ley</li>
@@ -360,7 +454,7 @@
             </article>
 
             <article class="tarjeta">
-              <div class="tarjeta__icono" aria-hidden="true">🕊️</div>
+              <div class="tarjeta__icono"><svg class="ico" aria-hidden="true"><use href="#i-paloma" /></svg></div>
               <h3>Inhumación o cremación</h3>
               <ul>
                 <li>Un puesto de fosa en cementerio municipal</li>
@@ -587,114 +681,25 @@
 
       <!-- ============ Contacto ============ -->
       <section class="seccion contacto" id="contacto">
-        <div class="contenedor contacto__interior">
-          <div class="contacto__texto revelar">
-            <span class="antetitulo">Hablemos</span>
-            <h2>Escríbeme y lo vemos con calma</h2>
-            <p>
-              Sin apuros y sin compromiso. Cuéntame tu caso y te explico
-              exactamente qué cubre el plan y cuánto cuesta.
-            </p>
+        <div class="contenedor contacto__interior revelar">
+          <span class="antetitulo">Hablemos</span>
+          <h2>Escríbeme y lo vemos con calma</h2>
+          <p class="contacto__entrada">
+            Sin apuros y sin compromiso. Cuéntame tu caso y te explico
+            exactamente qué cubre el plan y cuánto cuesta.
+          </p>
 
-            <ul class="datos">
-              <li>
-                <span class="icono-redondo" aria-hidden="true">✆</span>
-                <div>
-                  <span>WhatsApp y llamadas · 24 horas</span>
-                  <a
-                    href="https://wa.me/584144776156"
-                    target="_blank"
-                    rel="noopener"
-                    >0414 477 6156</a
-                  >
-                </div>
-              </li>
-              <li>
-                <span class="icono-redondo" aria-hidden="true">⚲</span>
-                <div>
-                  <span>Atención presencial</span>
-                  <strong
-                    >Av. Principal del Milagro, Local 82, Urb. El Milagro.
-                    Maracay, Edo. Aragua</strong
-                  >
-                </div>
-              </li>
-            </ul>
+          <a class="tarjeta-tel" href="https://wa.me/584144776156?text=Hola%20Nancy%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20de%20previsi%C3%B3n%20familiar." target="_blank" rel="noopener">
+            <span class="tarjeta-tel__etiqueta">WhatsApp y llamadas · 24 horas</span>
+            <strong class="tarjeta-tel__numero">0414 477 6156</strong>
+            <span class="tarjeta-tel__pie"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp" /></svg> Toca para escribirme</span>
+          </a>
 
-            <a
-              class="boton boton--claro contacto__boton"
-              href="https://wa.me/584144776156?text=Hola%20Nancy%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20de%20previsi%C3%B3n%20familiar."
-              target="_blank"
-              rel="noopener"
-              >Escribirme ahora por WhatsApp</a
-            >
-          </div>
-
-          <form class="formulario revelar" id="formulario-contacto">
-            <h3>Solicita información</h3>
-            <p class="formulario__intro">
-              Completa los datos y se abrirá WhatsApp con tu mensaje listo para
-              enviar.
-            </p>
-
-            <label class="campo">
-              <span>Nombre y apellido</span>
-              <input
-                type="text"
-                name="nombre"
-                required
-                autocomplete="name"
-                placeholder="Ej. María González"
-              />
-            </label>
-
-            <label class="campo">
-              <span>Ciudad</span>
-              <input
-                type="text"
-                name="ciudad"
-                required
-                placeholder="Ej. Maracay"
-              />
-            </label>
-
-            <label class="campo">
-              <span>¿Qué te interesa?</span>
-              <select name="interes" required>
-                <option value="un plan de previsión familiar">
-                  Un plan de previsión familiar
-                </option>
-                <option value="información sobre cremación">
-                  Información sobre cremación
-                </option>
-                <option value="información sobre inhumación">
-                  Información sobre inhumación
-                </option>
-                <option value="un plan corporativo para mi empresa">
-                  Un plan corporativo para mi empresa
-                </option>
-                <option value="un servicio inmediato">
-                  Necesito un servicio inmediato
-                </option>
-              </select>
-            </label>
-
-            <label class="campo">
-              <span>Cuéntame brevemente (opcional)</span>
-              <textarea
-                name="mensaje"
-                placeholder="Cuántas personas quieres incluir, dudas que tengas…"
-              ></textarea>
-            </label>
-
-            <button class="boton boton--primario boton--ancho" type="submit">
-              Enviar por WhatsApp
-            </button>
-            <p class="formulario__aviso">
-              Tus datos solo se usan para responderte. No se guardan en este
-              sitio.
-            </p>
-          </form>
+          <p class="contacto__direccion">
+            <span>Atención presencial</span>
+            Av. Principal del Milagro, Local 82, Urb. El Milagro.<br />
+            Maracay, Edo. Aragua
+          </p>
         </div>
       </section>
     </main>
@@ -715,6 +720,12 @@
       </div>
 
       <div class="contenedor pie__aval">
+        <img
+          src="img/logo-luz-del-cielo.png"
+          width="400"
+          height="372"
+          alt="Previsivos Luz del Cielo"
+        />
         <p>
           Servicios funerarios y planes de previsión familiar prestados por
           <strong>Previsivos Luz del Cielo 2022, C.A.</strong> · R.I.F.
@@ -730,7 +741,7 @@
       rel="noopener"
       aria-label="Escribir por WhatsApp a Nancy Torrealba al 0414 477 6156"
     >
-      <span aria-hidden="true">💬</span><span>WhatsApp</span>
+      <svg class="ico" aria-hidden="true"><use href="#i-whatsapp" /></svg><span>WhatsApp</span>
     </a>
 
     <script src="script.js"></script>

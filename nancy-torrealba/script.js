@@ -5,8 +5,6 @@
 (function () {
   "use strict";
 
-  var WHATSAPP = "584144776156";
-
   /* ---------- Menú móvil ---------- */
   var botonMenu = document.querySelector(".barra__boton");
   var menu = document.getElementById("menu-principal");
@@ -68,39 +66,5 @@
   var anio = document.getElementById("anio");
   if (anio) {
     anio.textContent = String(new Date().getFullYear());
-  }
-
-  /* ---------- Formulario: arma el mensaje y abre WhatsApp ---------- */
-  var formulario = document.getElementById("formulario-contacto");
-
-  if (formulario) {
-    formulario.addEventListener("submit", function (evento) {
-      evento.preventDefault();
-
-      var datos = new FormData(formulario);
-      var nombre = (datos.get("nombre") || "").toString().trim();
-      var ciudad = (datos.get("ciudad") || "").toString().trim();
-      var interes = (datos.get("interes") || "").toString().trim();
-      var mensaje = (datos.get("mensaje") || "").toString().trim();
-
-      var texto =
-        "Hola Nancy, soy " +
-        nombre +
-        " desde " +
-        ciudad +
-        ". Me interesa " +
-        interes +
-        ".";
-
-      if (mensaje) {
-        texto += " " + mensaje;
-      }
-
-      window.open(
-        "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(texto),
-        "_blank",
-        "noopener"
-      );
-    });
   }
 })();

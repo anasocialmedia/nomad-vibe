@@ -553,7 +553,7 @@ p {
   border-radius: 50%;
   background-color: var(--arena-suave);
   color: var(--azul);
-  font-size: 1rem;
+  font-size: 1.18rem;
 }
 
 /* ------------------ Compromiso: misión y visión ------------------ */
@@ -664,6 +664,13 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.ico {
+  width: 1em;
+  height: 1em;
+  display: block;
+  flex-shrink: 0;
+}
+
 .tarjeta__icono {
   width: 48px;
   height: 48px;
@@ -673,7 +680,7 @@ p {
   border-radius: 14px;
   background-color: var(--azul-suave);
   color: var(--azul);
-  font-size: 1.35rem;
+  font-size: 1.78rem;
 }
 
 .tarjeta ul {
@@ -715,6 +722,42 @@ p {
 
 .nota strong {
   color: var(--azul);
+}
+
+/* ------------------ Respaldo institucional ------------------ */
+
+.respaldo {
+  display: grid;
+  grid-template-columns: 168px 1fr;
+  gap: clamp(1.5rem, 4vw, 2.8rem);
+  align-items: center;
+  margin-top: clamp(2rem, 4vw, 2.8rem);
+  padding: clamp(1.8rem, 4vw, 2.6rem);
+  background: linear-gradient(150deg, var(--azul) 0%, var(--azul-medio) 100%);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+.respaldo__logo {
+  width: 100%;
+  height: auto;
+}
+
+.respaldo .antetitulo {
+  color: var(--arena);
+  margin-bottom: 0.5rem;
+}
+
+.respaldo h3 {
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+  font-size: clamp(1.25rem, 2.6vw, 1.6rem);
+}
+
+.respaldo p {
+  margin: 0;
+  font-size: 0.96rem;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 /* ------------------ Beneficios ------------------ */
@@ -863,10 +906,10 @@ p {
 .contacto {
   background: linear-gradient(160deg, var(--azul) 0%, #101a41 100%);
   color: #ffffff;
+  text-align: center;
 }
 
-.contacto h2,
-.contacto h3 {
+.contacto h2 {
   color: #ffffff;
 }
 
@@ -875,127 +918,81 @@ p {
 }
 
 .contacto__interior {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(2rem, 5vw, 4rem);
-  align-items: start;
+  max-width: 640px;
 }
 
-.contacto__texto p {
-  color: rgba(255, 255, 255, 0.75);
+.contacto__entrada {
+  margin: 0 auto;
   max-width: 46ch;
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.datos {
-  list-style: none;
-  margin: 2rem 0 0;
-  padding: 0;
-  display: grid;
-  gap: 1.1rem;
-}
-
-.datos li {
-  display: grid;
-  grid-template-columns: 38px 1fr;
-  gap: 0.9rem;
-  align-items: center;
-}
-
-.datos .icono-redondo {
-  width: 38px;
-  height: 38px;
-  background-color: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
-}
-
-.datos span {
+/* Tarjeta del teléfono: el único destino de la página */
+.tarjeta-tel {
   display: block;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.datos a,
-.datos strong {
-  color: #ffffff;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 0.98rem;
-}
-
-.datos a:hover {
-  text-decoration: underline;
-}
-
-.contacto__boton {
-  margin-top: 2.2rem;
-}
-
-.formulario {
-  padding: clamp(1.6rem, 4vw, 2.4rem);
+  margin: 2.6rem auto 0;
+  max-width: 420px;
+  padding: 1.7rem 1.5rem 1.4rem;
   background-color: #ffffff;
   border-radius: var(--radio);
-  box-shadow: 0 30px 60px -35px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  box-shadow: 0 30px 60px -35px rgba(0, 0, 0, 0.75);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.formulario h3 {
-  color: var(--azul);
-  font-size: 1.35rem;
+.tarjeta-tel:hover,
+.tarjeta-tel:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 36px 66px -32px rgba(0, 0, 0, 0.8);
 }
 
-.formulario__intro {
-  margin-top: -0.3rem;
-  font-size: 0.9rem;
-  color: var(--gris);
-}
-
-.campo {
+.tarjeta-tel__etiqueta {
   display: block;
-  margin-bottom: 1rem;
-}
-
-.campo span {
-  display: block;
-  margin-bottom: 0.35rem;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.tarjeta-tel__numero {
+  display: block;
+  margin: 0.45rem 0 0.3rem;
+  font-family: var(--sans);
+  font-size: clamp(2rem, 6vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
   color: var(--azul);
 }
 
-.campo input,
-.campo select,
-.campo textarea {
-  width: 100%;
-  padding: 0.8rem 0.95rem;
-  font-family: inherit;
-  font-size: 0.95rem;
-  color: var(--texto);
-  background-color: var(--crema);
-  border: 1px solid var(--borde);
-  border-radius: 12px;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+.tarjeta-tel__pie {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1eb257;
 }
 
-.campo textarea {
-  min-height: 110px;
-  resize: vertical;
+.tarjeta-tel__pie .ico {
+  font-size: 1.05rem;
 }
 
-.campo input:focus,
-.campo select:focus,
-.campo textarea:focus {
-  outline: none;
-  border-color: var(--azul-medio);
-  box-shadow: 0 0 0 3px rgba(36, 56, 127, 0.15);
+.contacto__direccion {
+  margin: 2.4rem auto 0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.62);
 }
 
-.formulario__aviso {
-  margin: 0.9rem 0 0;
-  font-size: 0.78rem;
-  color: var(--gris);
-  text-align: center;
+.contacto__direccion span {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.42);
 }
 
 /* ------------------ Pie ------------------ */
@@ -1032,6 +1029,19 @@ p {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.pie__aval {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.pie__aval img {
+  width: 74px;
+  height: auto;
+  opacity: 0.85;
+}
+
 .pie__aval p {
   margin: 0;
   max-width: 78ch;
@@ -1066,6 +1076,10 @@ p {
   text-decoration: none;
   box-shadow: 0 16px 32px -14px rgba(30, 178, 87, 0.8);
   transition: transform 0.2s ease;
+}
+
+.flotante .ico {
+  font-size: 1.15rem;
 }
 
 .flotante:hover,
@@ -1126,9 +1140,24 @@ p {
 
   .portada__interior,
   .perfil,
-  .beneficios,
-  .contacto__interior {
+  .beneficios {
     grid-template-columns: 1fr;
+  }
+
+  .respaldo {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .respaldo__logo {
+    max-width: 150px;
+  }
+
+  .pie__aval {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
   }
 
   .retrato {
@@ -1154,6 +1183,10 @@ p {
 
   .flotante span {
     display: none;
+  }
+
+  .flotante .ico {
+    font-size: 1.35rem;
   }
 
   .flotante {
