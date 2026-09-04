@@ -59,7 +59,8 @@ Dentro del repositorio también vive una landing page independiente de marca
 personal para **Nancy Torrealba**, asesora en previsión familiar con más de 30
 años de experiencia en el sector funerario.
 
-🔗 **[Ver landing](https://anasocialmedia.github.io/nomad-vibe/nancy-torrealba/)**
+🔗 **[Ver landing](https://nancy-torrealba.vercel.app/)**  
+_(desplegada en Vercel desde la carpeta `nancy-torrealba/`)_
 
 ```bash
 nancy-torrealba/
