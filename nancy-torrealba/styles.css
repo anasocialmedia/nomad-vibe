@@ -417,34 +417,6 @@ p {
   object-fit: cover;
 }
 
-/* Marca de agua que se ve mientras no hay foto cargada */
-.retrato__inicial {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.92);
-  font-family: var(--serif);
-}
-
-.retrato__inicial span {
-  display: block;
-  font-size: 5rem;
-  line-height: 1;
-  letter-spacing: 0.08em;
-}
-
-.retrato__inicial small {
-  display: block;
-  margin-top: 0.6rem;
-  font-family: var(--sans);
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.65);
-}
-
 .retrato__sello {
   position: absolute;
   right: -10px;

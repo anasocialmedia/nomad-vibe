@@ -1,8 +1,8 @@
-Coloca aquí la foto de Nancy con el nombre: nancy.jpg
+nancy.jpg — retrato de Nancy en la portada.
 
-Recomendaciones:
-- Formato vertical (proporción 4:5), mínimo 800 x 1000 px.
-- Fondo limpio y luz suave; retrato de medio cuerpo.
+La foto actual se recortó del flyer impreso, así que su resolución es
+limitada (686 x 858 px). Cuando haya una toma original, sustituir el
+archivo manteniendo el nombre y la proporción 4:5 (ideal: 1000 x 1250 px
+o más, fondo liso, luz suave, retrato de medio cuerpo).
 
-Luego, en index.html, busca el bloque "retrato__marco" y descomenta la línea:
-<img src="img/nancy.jpg" alt="Nancy Torrealba, asesora en previsión familiar" />
+No hace falta tocar el HTML: la portada la toma de img/nancy.jpg.
