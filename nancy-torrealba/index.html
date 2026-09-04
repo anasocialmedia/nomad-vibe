@@ -11,7 +11,18 @@
     <meta name="author" content="Nancy Torrealba" />
     <meta name="theme-color" content="#16255a" />
 
+    <link rel="canonical" href="https://anasocialmedia.github.io/nomad-vibe/nancy-torrealba/" />
+
     <!-- Redes sociales -->
+    <meta property="og:url" content="https://anasocialmedia.github.io/nomad-vibe/nancy-torrealba/" />
+    <meta property="og:image" content="https://anasocialmedia.github.io/nomad-vibe/nancy-torrealba/img/preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Nancy Torrealba, asesora en previsión familiar en Maracay"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       property="og:title"
       content="Nancy Torrealba | Asesora en Previsión Familiar"
@@ -37,7 +48,48 @@
       rel="stylesheet"
     />
 
+    <link rel="preload" as="image" href="img/nancy.jpg" fetchpriority="high" />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Datos estructurados: solo lo que ya dice la página -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Nancy Torrealba — Previsión familiar",
+        "description": "Asesora en previsión familiar, cremación e inhumación con más de 30 años de experiencia en el sector funerario.",
+        "url": "https://anasocialmedia.github.io/nomad-vibe/nancy-torrealba/",
+        "image": "https://anasocialmedia.github.io/nomad-vibe/nancy-torrealba/img/preview.jpg",
+        "telephone": "+58-414-4776156",
+        "areaServed": "Venezuela",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Principal del Milagro, Local 82, Urb. El Milagro",
+          "addressLocality": "Maracay",
+          "addressRegion": "Aragua",
+          "addressCountry": "VE"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday", "Tuesday", "Wednesday", "Thursday",
+            "Friday", "Saturday", "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "employee": {
+          "@type": "Person",
+          "name": "Nancy Torrealba",
+          "jobTitle": "Asesora en previsión familiar",
+          "telephone": "+58-414-4776156"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Previsivos Luz del Cielo 2022, C.A."
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -121,6 +173,8 @@
     </svg>
 
     <!-- ============ Barra superior ============ -->
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
     <header class="barra" id="inicio">
       <div class="contenedor barra__interior">
         <a class="marca" href="#inicio">
@@ -156,7 +210,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="contenido">
       <!-- ============ Portada ============ -->
       <section class="portada">
         <div class="contenedor portada__interior">
@@ -200,8 +254,10 @@
             <div class="retrato__marco">
               <img
                 src="img/nancy.jpg"
-                width="686"
-                height="858"
+                width="900"
+                height="1125"
+                fetchpriority="high"
+                decoding="async"
                 alt="Nancy Torrealba, asesora en previsión familiar"
               />
             </div>
@@ -365,8 +421,10 @@
             <img
               class="respaldo__logo"
               src="img/logo-luz-del-cielo.png"
-              width="400"
-              height="372"
+              width="340"
+              height="316"
+              loading="lazy"
+              decoding="async"
               alt="Previsivos Luz del Cielo"
             />
             <div>
@@ -688,7 +746,8 @@
             exactamente qué cubre el plan y cuánto cuesta.
           </p>
 
-          <a class="tarjeta-tel" href="https://wa.me/584144776156?text=Hola%20Nancy%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20de%20previsi%C3%B3n%20familiar." target="_blank" rel="noopener">
+          <a class="tarjeta-tel" aria-label="Escribir por WhatsApp al 0414 477 6156"
+             href="https://wa.me/584144776156?text=Hola%20Nancy%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20de%20previsi%C3%B3n%20familiar." target="_blank" rel="noopener">
             <span class="tarjeta-tel__etiqueta">WhatsApp y llamadas · 24 horas</span>
             <strong class="tarjeta-tel__numero">0414 477 6156</strong>
             <span class="tarjeta-tel__pie"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp" /></svg> Toca para escribirme</span>
@@ -721,8 +780,10 @@
       <div class="contenedor pie__aval">
         <img
           src="img/logo-luz-del-cielo.png"
-          width="400"
-          height="372"
+          width="340"
+          height="316"
+          loading="lazy"
+          decoding="async"
           alt="Previsivos Luz del Cielo"
         />
         <p>

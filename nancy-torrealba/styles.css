@@ -10,7 +10,10 @@
   --arena: #e3cdb8;
   --arena-suave: #f6ece2;
   --crema: #fdfaf6;
-  --dorado: #b98d3a;
+  --dorado: #b98d3a;          /* solo filos y reglas, nunca texto */
+  --dorado-texto: #856121;    /* 4.8:1 sobre arena, cumple AA */
+  --dorado-titular: #a87c2c;  /* 3.2:1, suficiente para 64 px */
+  --verde: #0f7d3c;           /* 5.2:1 con texto blanco encima */
   --texto: #1f2330;
   --gris: #5c6274;
   --borde: rgba(22, 37, 90, 0.12);
@@ -78,6 +81,33 @@ p {
   margin: 0 0 1.1em;
 }
 
+:where(a, button, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--dorado-titular);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Salto al contenido, para quien navega con teclado o lector */
+.saltar {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -120%);
+  z-index: 100;
+  padding: 0.8rem 1.4rem;
+  background-color: var(--azul);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 12px 12px;
+  transition: transform 0.2s ease;
+}
+
+.saltar:focus {
+  transform: translate(-50%, 0);
+}
+
 .contenedor {
   width: min(100% - 2.5rem, var(--ancho));
   margin-inline: auto;
@@ -112,7 +142,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--dorado);
+  color: var(--dorado-texto);
   margin-bottom: 0.9rem;
 }
 
@@ -160,15 +190,6 @@ p {
 .boton--secundario:hover,
 .boton--secundario:focus-visible {
   background-color: rgba(22, 37, 90, 0.06);
-}
-
-.boton--claro {
-  background-color: #ffffff;
-  color: var(--azul);
-}
-
-.boton--ancho {
-  width: 100%;
 }
 
 /* ------------------ Barra superior ------------------ */
@@ -362,7 +383,7 @@ p {
 
 .portada h1 .destacado {
   display: block;
-  color: var(--dorado);
+  color: var(--dorado-titular);
   font-style: italic;
 }
 
@@ -971,7 +992,7 @@ p {
   gap: 0.4rem;
   font-size: 0.85rem;
   font-weight: 500;
-  color: #1eb257;
+  color: var(--verde);
 }
 
 .tarjeta-tel__pie .ico {
@@ -992,7 +1013,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* ------------------ Pie ------------------ */
@@ -1047,7 +1068,7 @@ p {
   max-width: 78ch;
   font-size: 0.78rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.56);
 }
 
 .pie__aval strong {
@@ -1069,12 +1090,12 @@ p {
   gap: 0.55rem;
   padding: 0.85rem 1.35rem;
   border-radius: 999px;
-  background-color: #1eb257;
+  background-color: var(--verde);
   color: #ffffff;
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 16px 32px -14px rgba(30, 178, 87, 0.8);
+  box-shadow: 0 16px 32px -14px rgba(15, 125, 60, 0.85);
   transition: transform 0.2s ease;
 }
 
